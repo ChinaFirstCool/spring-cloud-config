@@ -23,3 +23,4 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
+test: 1111
