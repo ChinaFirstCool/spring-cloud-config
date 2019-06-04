@@ -1,5 +1,3 @@
-
-
 ##timeout config
 hystrix:
   command:
