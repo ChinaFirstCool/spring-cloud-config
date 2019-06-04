@@ -14,7 +14,7 @@ ribbon:
   MaxAutoRetries: 0
   MaxAutoRetriesNextServer: 1
   eureka:
-    enabled: false
+    enabled: true
 
 zuul:
   max:
