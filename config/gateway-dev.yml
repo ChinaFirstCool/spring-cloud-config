@@ -43,3 +43,6 @@ zuul:
     api-b-client:
       path: /b-client/**
       service-id: b-client
+    api-ncc-cloud-base-info:
+      path: /ncc-cloud-base-info/**
+      service-id: ncc-cloud-base-info-dev
