@@ -1,16 +1,12 @@
-
-	  
 spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
-
 management:
   security:
     enabled: false
-	
 ##timeout config
 hystrix:
   command:
@@ -36,9 +32,7 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
-
-test: 2222
-
+test: 1111
 ##feign的配置项:
 feign:
   ##启动feign的断路器功能
