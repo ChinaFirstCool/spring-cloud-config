@@ -1,15 +1,11 @@
-eureka:
-  client:
-    service-url:
-      ##单点配置:
-      defaultZone: http://ncc:ncc@127.0.0.1:8001/eureka/
+
 	  
 spring:
   rabbitmq:
-  host: 127.0.0.1
-  port: 5672
-  username: guest
-  password: guest
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 management:
   security:
