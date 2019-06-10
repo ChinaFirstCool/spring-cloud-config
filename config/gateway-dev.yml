@@ -1,3 +1,12 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+management:
+  security:
+    enabled: false
 ##timeout config
 hystrix:
   command:
@@ -23,4 +32,14 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
-test: 2222
+  retryable: true
+  routes:
+    api-feign:
+      path: /feign/**
+      service-id: feign
+    api-a-client:
+      path: /a-client/**
+      service-id: a-client
+    api-b-client:
+      path: /b-client/**
+      service-id: b-client
