@@ -32,17 +32,16 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
-  retryable: true
-  routes:
-    api-feign:
-      path: /feign/**
-      service-id: feign
-    api-a-client:
-      path: /a-client/**
-      service-id: a-client
-    api-b-client:
-      path: /b-client/**
-      service-id: b-client
-    api-ncc-cloud-login:
-      path: /ncc-cloud-login/**
-      service-id: ncc-cloud-login
+test: 1111
+##feign的配置项:
+feign:
+  ##启动feign的断路器功能
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      min-request-size: 2048
+      mime-types:
+      - text/xml, application/xml, application/json
+    response:
+      enabled: true
