@@ -45,3 +45,5 @@ feign:
       - text/xml, application/xml, application/json
     response:
       enabled: true
+url:
+  fileUrl: /usr/local/testFile
