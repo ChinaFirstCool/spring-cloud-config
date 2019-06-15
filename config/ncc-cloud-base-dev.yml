@@ -18,8 +18,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
 ribbon:
-  ReadTimeout: 3000
-  ConnectTimeout: 2000
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
   MaxAutoRetries: 2
   MaxAutoRetriesNextServer: 1
   eureka:
