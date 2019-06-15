@@ -52,3 +52,6 @@ zuul:
     api-ncc-cloud-user:
       path: /ncc-cloud-user/**
       service-id: ncc-cloud-user
+    api-ncc-cloud-label:
+      path: /ncc-cloud-label/**
+      service-id: ncc-cloud-label
