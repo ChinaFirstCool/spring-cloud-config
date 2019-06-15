@@ -1,9 +1,9 @@
 spring:
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
   datasource:
     url: jdbc:mysql://39.105.181.72/ncc-cloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
     username: anti
