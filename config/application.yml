@@ -4,9 +4,22 @@ spring:
     port: 5672
     username: guest
     password: guest
+  datasource:
+    url: jdbc:mysql://39.105.181.72/ncc-cloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+    username: anti
+    password: lenovoL430
+    driver-class-name: com.mysql.jdbc.Driver
+	
 management:
   security:
     enabled: false
+	
+#mabatis数库查询实体接受返回值空值也显示key值
+mybatis:
+  configuration:
+    call-setters-on-nulls: true
+
+	
 ##timeout config
 hystrix:
   command:
@@ -18,8 +31,8 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
 ribbon:
-  ReadTimeout: 3000
-  ConnectTimeout: 2000
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
   MaxAutoRetries: 2
   MaxAutoRetriesNextServer: 1
   eureka:
