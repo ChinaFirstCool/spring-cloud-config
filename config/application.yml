@@ -9,17 +9,17 @@ spring:
     username: anti
     password: lenovoL430
     driver-class-name: com.mysql.jdbc.Driver
-	
+
 management:
   security:
     enabled: false
-	
+
 #mabatis数库查询实体接受返回值空值也显示key值
 mybatis:
   configuration:
     call-setters-on-nulls: true
 
-	
+
 ##timeout config
 hystrix:
   command:
