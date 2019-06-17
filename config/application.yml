@@ -45,6 +45,7 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
+  retryable: true
 test: 1111
 ##feign的配置项:
 feign:

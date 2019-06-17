@@ -1,38 +1,4 @@
-spring:
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-management:
-  security:
-    enabled: false
-##timeout config
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: true
-        isolation:
-          thread:
-            timeoutInMilliseconds: 60000
-ribbon:
-  ReadTimeout: 5000
-  ConnectTimeout: 5000
-  MaxAutoRetries: 2
-  MaxAutoRetriesNextServer: 1
-  eureka:
-    enabled: true
-
 zuul:
-  max:
-    host:
-      connections: 500
-  host:
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
-  retryable: true
   routes:
     api-feign:
       path: /feign/**
