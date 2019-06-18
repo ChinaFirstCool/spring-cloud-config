@@ -21,3 +21,6 @@ zuul:
     api-ncc-cloud-label:
       path: /ncc-cloud-label/**
       service-id: ncc-cloud-label
+    api-ncc-cloud-JWT:
+      path: /ncc-cloud-online/**
+      service-id: ncc-cloud-JWT
