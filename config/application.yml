@@ -9,7 +9,10 @@ spring:
     username: anti
     password: lenovoL430
     driver-class-name: com.mysql.jdbc.Driver
-
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
 management:
   security:
     enabled: false
