@@ -13,6 +13,10 @@ spring:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
+  http:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
 management:
   security:
     enabled: false
